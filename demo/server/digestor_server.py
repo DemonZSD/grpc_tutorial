@@ -61,8 +61,3 @@ class DigestorServicer(digestor_pb2_grpc.DigestorServicer):
         except KeyboardInterrupt:
             digestor_server.stop(0)
             print('Digestor Server Stopped ...')
-
-
-if __name__ == '__main__':
-    curr_server = DigestorServicer()
-    curr_server.start_server()

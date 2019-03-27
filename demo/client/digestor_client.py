@@ -26,7 +26,3 @@ class DigestorClient(object):
         to_digest_message = digestor_pb2.DigestMessage(ToDigest=message)
         return self.stub.GetDigestor(to_digest_message)
 
-
-if __name__ == '__main__':
-    digestor_client = DigestorClient()
-    digestor_client.get_digest('Test')
