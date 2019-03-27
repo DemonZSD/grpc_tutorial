@@ -9,6 +9,8 @@ syntax = 'proto3';
 package digestor;
 
 service Digestor{
+    // 定义一个 gRPC 服务方法， 在此也可以定义多个方法
+    // rpc DoSomething(ClassType1) returns (ClassType2) {};
     rpc GetDigestor(DigestMessage) returns (DigestedMessage) {};
 }
 
